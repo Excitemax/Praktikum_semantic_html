@@ -7,17 +7,21 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color:#b5990f;
         }
+
         header {
-            background-color: #f0f0f0;
+            background-color: #33044cea;
             padding: 20px;
             text-align: center;
         }
+
         nav ul {
             list-style-type: none;
             padding: 0;
             text-align: center;
         }
+
         nav ul li {
             display: inline;
             margin-right: 20px;
@@ -25,7 +29,7 @@
 
     nav ul  li a {
         text-decoration: none;
-        color: blue;
+        
     }
     a:hover {
         text-decoration: underline;
@@ -34,16 +38,43 @@
         margin: 20px 0;
     }
     footer {
-        background-color: #f0f0f0;
+        background-color: #470d61;
         padding: 10px;
         text-align: center;
     }
+    .nama {
+        font-weight: bold;
+    }
+    #warna {
+        color: #b5990f;
+    }   
+    footer a {
+        color:#b5990f
+    }
+    [href*="#pendidikan"] {
+        color:rgb(92, 12, 98)
+    }
+    [href*="#biodata"] {
+        color:rgb(92, 12, 98)
+    }
+    [href*="#skills"] {
+        color:rgb(92, 12, 98)
+    }
+
+    a:hover{
+        color: crimson;
+    }
+
+    p::first-line{
+        color: aquamarine;
+    }
+    
     </style>
 </head>
 <body>
     <header>
-        <h1>Ezekiel Griffin Dave</h1>
-        <p>Mahasiswa UNDIKNAS | Angkatan 2022</p>
+        <h1 id="warna">Ezekiel Griffin Dave</h1>
+        <p id="warna">Mahasiswa UNDIKNAS | Angkatan 2022</p>
     </header>
     <nav>
         <ul>
@@ -54,11 +85,11 @@
     </nav>
     <section id="biodata">
         <h2>Biodata Diri</h2>
-        <p>Nama: Ezekiel Griffin Dave</p>
-        <p>Email: ezekielgriffindave@gmail.com</p>
-        <p>Kewarganegaraan: Indonesia</p>
-        <p>Universitas: UNDIKNAS</p>
-        <P>Domisili: Denpasar</P>
+        <p class="nama">Nama: Ezekiel Griffin Dave</p>
+        <p class="nama">Email: ezekielgriffindave@gmail.com</p>
+        <p class="nama">Kewarganegaraan: Indonesia</p>
+        <p class="nama">Universitas: UNDIKNAS</p>
+        <P class="nama">Domisili: Denpasar</P>
     </section>
     <section id="pendidikan">
         <h2>Pendidikan</h2>
@@ -75,7 +106,7 @@
         <p>Management</p>
 
     </section>
-    <footer>
+    <footer id="warna">
         Ikuti saya di social media: <a href="https://www.instagram.com/neon.dave?igsh=MWw4MHF4bWR1bzdwZg==">Instagram</a>, <a href="https://www.facebook.com/share/D1nDRrZSP89vRmBX/?mibextid=qi2Omg">Facebook</a>
     </footer>
 
